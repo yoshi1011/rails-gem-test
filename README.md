@@ -12,3 +12,7 @@ Ruby on Rails関連のGemをテスト利用するためのリポジトリです�
 フレームワーク…Ruby on Rails 6.1.4.1
 
 データベース…PostgreSQL 14.1
+
+## 利用Gem
+- active_decorator
+- active_attr...通常のRubyで試すだけで十分ではあるが…
