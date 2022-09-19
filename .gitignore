@@ -3,3 +3,4 @@
 .DS_Store
 .env
 *.iml
+.gem_rbs_collection
