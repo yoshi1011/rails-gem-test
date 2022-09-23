@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+unless Rails.env.production?
+  10.times.each do |n|
+    post = Post.create(
+      title: "title_#{n}",
+      truncated_preview: "post" * n
+    )
+    num_of_comment = rand(5)
+    num_of_comment.times.each do |cn|
+      post.comments.create(content: "comment_#{cn}")
+    end
+  end
+end
